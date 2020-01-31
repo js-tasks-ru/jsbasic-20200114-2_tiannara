@@ -3,6 +3,16 @@
  * @param {Object} salaries - объект зарплат
  * @returns {Number}
  */
-function sumSalary(salaries) {
+let salaries = {
+    John: 1000,
+    Ann: 1600,
+    Pete: 1300,
+    month: 'December',
+    currency: 'USD',
+    isPayed: false
+  };
 
-}
+  function sumSalaries(salaries) {
+    Object.values(salaries).splice(0, 3).reduce((val, sum) => sum + val);
+    }    
+
