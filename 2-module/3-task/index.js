@@ -7,13 +7,11 @@ let calculator = {
     return this.a * this.b;
   },
 
-  read() {
+  read(a, b) {
     this.a = a;
     this.b = b;
   }
 };
-
-calculator.read(a, b);
 
 // НЕ УДАЛЯТЬ СТРОКУ, НУЖНА ДЛЯ ПРОВЕРКИ
 window.calculator = calculator; // делает ваш калькулятор доступным глобально
